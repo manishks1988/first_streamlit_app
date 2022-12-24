@@ -1,7 +1,8 @@
 import streamlit
 
-streamlit.title('I started work on Python..!')
-streamlit.header('My observation')
-streamlit.text('Also happy to do conding in this App')
-streamlit.text('its still easy to do code')
-streamlit.text('Now we can see next code to add in python via github')
+
+streamlit.title('My Parents New healthy diner')
+streamlit.header('Breakfast Menu')
+streamlit.text('Omega 3 & Blueberry Oatmeal')
+streamlit.text('Kale, Spinach & Rocket Smoothie')
+streamlit.text('Hard-Boiled Free-Range Egg')
