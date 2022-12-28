@@ -64,7 +64,8 @@ def insert_row_snowflake(new_fruit):
 #       my_cur.execute("insert into pc_rivery_db.public.fruit_load_list values ('from streamlit1')")
 #       my_cur.execute("insert into pc_rivery_db.public.fruit_load_list values ('"+ 'jackfruit' +"')") 
 #       my_cur.execute("insert into pc_rivery_db.public.fruit_load_list values ('"+ 'guava' +"')") 
-        my_cur.execute("insert into pc_rivery_db.public.fruit_load_list values ('"+ 'papaya' +"')") 
+#       my_cur.execute("insert into pc_rivery_db.public.fruit_load_list values ('"+ 'papaya' +"')") 
+        my_cur.execute("insert into pc_rivery_db.public.fruit_load_list values ('"+ 'kiwi' +"')") 
     return "Thanks for adding " + new_fruit
 
 add_my_fruit = streamlit.text_input('What fruit would you like to add?') 
