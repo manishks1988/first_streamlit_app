@@ -75,7 +75,29 @@ if streamlit.button('Add a fruit to the list'):
        back_from_function =  insert_row_snowflake(add_my_fruit)
        streamlit.text(back_from_function)
         
-add_my_fruit.clear()
+#Import the tkinter library
+from tkinter import *
+
+#Create an instance of tkinter frame
+win = Tk()
+
+#Set the geometry
+win.geometry("600x250")
+
+#Define a function to clear the input text
+def clearToTextInput():
+   my_text.delete("1.0","end")
+
+#Create a text widget
+my_text=Text(win, height=10)
+my_text.pack()
+
+#Create a Button
+btn=Button(win,height=1,width=10, text="Clear",command=clearToTextInput)
+btn.pack()
+
+#Display the window without pressing key
+win.mainloop()
 # streamlit.write('The user entered ', add_my_fruit)
 # streamlit.write('Thanks for adding ', add_my_fruit)
 
