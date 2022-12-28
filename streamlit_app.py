@@ -47,3 +47,6 @@ streamlit.dataframe(my_data_rows)
 add_my_fruit = streamlit.text_input('What fruit would you like to add?','Jackfruit') 
 # streamlit.write('The user entered ', add_my_fruit)
 streamlit.write('Thanks for adding ', add_my_fruit)
+
+# code for insrting data in Snowflake table from streamlit
+my_cur.execute("insert into pc_rivery_db.public.fruit_load_list values ('from streamlit')")
