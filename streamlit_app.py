@@ -76,7 +76,7 @@ if streamlit.button('Add a fruit to the list'):
        streamlit.text(back_from_function)
         
 #Import the tkinter library
-from tkinter import *
+#from tkinter import *
 
 
 # streamlit.write('The user entered ', add_my_fruit)
