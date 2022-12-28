@@ -41,9 +41,6 @@ try:
 except URLerror as e:
       streamlit.error()
 
-# don't run anything past here while we troubleshoot
-# streamlit.stop()
-
 streamlit.header("the friut load list contains")
 #snowflake-related function
 def get_fruit_load_list():
@@ -59,6 +56,10 @@ if streamlit.button('get fruit load list'):
 
 # Allow the end user to add fruit to the list
 add_my_fruit = streamlit.text_input('What fruit would you like to add?','Jackfruit') 
+
+# don't run anything past here while we troubleshoot
+streamlit.stop()
+
 # streamlit.write('The user entered ', add_my_fruit)
 streamlit.write('Thanks for adding ', add_my_fruit)
 
