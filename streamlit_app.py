@@ -76,7 +76,7 @@ if streamlit.button('Add a fruit to the list'):
        streamlit.text(back_from_function)
         
 # streamlit.write('The user entered ', add_my_fruit)
-streamlit.write('Thanks for adding ', add_my_fruit)
+# streamlit.write('Thanks for adding ', add_my_fruit)
 
 # code for insrting data in Snowflake table from streamlit
 #my_cur.execute("insert into pc_rivery_db.public.fruit_load_list values ('from streamlit1')")
